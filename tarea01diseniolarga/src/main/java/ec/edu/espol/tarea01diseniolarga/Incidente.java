@@ -11,10 +11,10 @@ import java.util.Date;
  * @author marsa
  */
 public class Incidente {
-    int id;
-    String descripcion;
-    NivelEscalamiento nivel;
-    Date fecha;
+    private int id;
+    private String descripcion;
+    private NivelEscalamiento nivel;
+    private Date fecha;
 
     void crearIncidente() {
         // Lógica para crear incidente
