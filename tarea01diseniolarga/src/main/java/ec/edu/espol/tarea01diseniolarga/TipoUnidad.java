@@ -9,5 +9,9 @@ package ec.edu.espol.tarea01diseniolarga;
  * @author marsa
  */
 public enum TipoUnidad {
-    
+    DISPONIBLE,
+    RESERVADA,
+    OCUPADA,
+    EN_MANTENIMIENTO,
+    FUERA_DE_SERVICIO
 }
