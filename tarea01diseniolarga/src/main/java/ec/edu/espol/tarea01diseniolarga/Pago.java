@@ -16,8 +16,10 @@ public class Pago {
     Date fecha;
     TipoPago tipoPago;
 
-    void procesarPago() {
-        // Lógica para procesar pago
+    public void procesarPago() {
+        // Código para procesar el pago
+        System.out.println("Procesando pago");
     }
+}
     
 }

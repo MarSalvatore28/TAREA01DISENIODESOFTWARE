@@ -31,12 +31,21 @@ public class Huesped extends Usuario {
         return ""; // Lógica para realizar pago
     }
 
-    void buscarPropiedad() {
-        // Lógica para buscar propiedad
+    public void buscarPropiedad() {
+        SistemaHomeStay sistema = new SistemaHomeStay();
+        sistema.aplicarFiltro();
+        sistema.mostrarPropiedadesDestacadas();
+        sistema.verificarDisponibilidad();
+        System.out.println("Mostrar resultados");
     }
 
-    void realizarReserva() {
-        // Lógica para realizar reserva
+   public void realizarReserva() {
+        Reserva reserva = new Reserva();
+        if (reserva.confirmarReserva()) {
+            System.out.println("Reserva Realizada");
+        } else {
+            System.out.println("No se pudo realizar la reserva");
+        }
     }
     
 }

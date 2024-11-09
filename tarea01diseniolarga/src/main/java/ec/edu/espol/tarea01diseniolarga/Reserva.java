@@ -18,8 +18,25 @@ public class Reserva {
     double costo;
     Huesped huesped;
 
-    void confirmarReserva() {
-        // Lógica para confirmar reserva
+
+
+     public boolean confirmarReserva() {
+        // Código para confirmar reserva
+        this.estadoConfirmacion = true;
+        procesarPago();
+        enviarNotificacion();
+        return estadoConfirmacion;
+    }
+     private void procesarPago() {
+        // Código para procesar el pago
+        Pago pago = new Pago();
+        pago.procesarPago();
+        System.out.println("Pago procesado");
+    }
+    private void enviarNotificacion() {
+        ServicioNotificacion servicio = new NotificacionSMS(); // o NotificacionEmail según el tipo de notificación
+        servicio.enviarNotificacion();
+        System.out.println("Notificación Enviada");
     }
 
     void cancelarReserva() {
