@@ -12,4 +12,26 @@ public interface ServicioNotificacion {
     void enviarNotificacion();
     void cancelarNotificacion();
     
+    public class NotificacionSMS implements ServicioNotificacion {
+    @Override
+    public void enviarNotificacion() {
+        System.out.println("Enviando notificación SMS");
+    }
+
+    @Override
+    public void cancelarNotificacion() {
+        System.out.println("Cancelando notificación SMS");
+    }
+}
+
+public class NotificacionEmail implements ServicioNotificacion {
+    @Override
+    public void enviarNotificacion() {
+        System.out.println("Enviando notificación Email");
+    }
+
+    @Override
+    public void cancelarNotificacion() {
+        System.out.println("Cancelando notificación Email");
+    }
 }
