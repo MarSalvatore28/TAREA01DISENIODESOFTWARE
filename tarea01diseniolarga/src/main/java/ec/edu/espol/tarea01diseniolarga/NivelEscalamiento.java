@@ -9,6 +9,7 @@ package ec.edu.espol.tarea01diseniolarga;
  * @author marsa
  */
 public enum NivelEscalamiento {
-    ANFITRION, MODERADOR, SOPORTE_LEGAL
-    
+    ANFITRION,
+    MODERADOR,
+    SOPORTE_LEGAL
 }
