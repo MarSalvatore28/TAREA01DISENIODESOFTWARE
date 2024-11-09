@@ -9,6 +9,7 @@ package ec.edu.espol.tarea01diseniolarga;
  * @author marsa
  */
 public enum TipoPropiedad {
-    HABITACION_PRIVADA, DEPARTAMENTO_COMPLETO, CASA
-    
+    HABITACION_PRIVADA,
+    DEPARTAMENTO_COMPLETO,
+    CASA
 }
