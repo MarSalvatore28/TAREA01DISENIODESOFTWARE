@@ -6,19 +6,15 @@ package ec.edu.espol.tarea01diseniolarga;
 
 import java.util.ArrayList;
 
-/**
- *
- * @author marsa
- */
 public class Anfitrion extends Usuario {
-    ArrayList<Propiedad> propiedades = new ArrayList<>();
+    private ArrayList<Propiedad> propiedades;
 
-    String verPropiedades() {
-        return ""; // Lógica para ver propiedades
+    public String verPropiedades() {
+        // Código para ver propiedades
+        return "Propiedades mostradas";
     }
 
-    String establecerReglas(int nregla, String descripcion) {
-        return ""; // Lógica para establecer reglas
+    public void establecerReglas(int nregla, String descripcion) {
+        // Código para establecer reglas de propiedad
     }
-    
 }
