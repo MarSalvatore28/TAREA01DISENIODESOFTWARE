@@ -9,6 +9,7 @@ package ec.edu.espol.tarea01diseniolarga;
  * @author marsa
  */
 public enum TipoPago {
-    TARJETA, TRANSFERENCIA, EFECTIVO
-    
+    TARJETA,
+    TRANSFERENCIA,
+    EFECTIVO
 }
