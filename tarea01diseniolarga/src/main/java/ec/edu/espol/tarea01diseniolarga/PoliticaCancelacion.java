@@ -9,9 +9,9 @@ package ec.edu.espol.tarea01diseniolarga;
  * @author marsa
  */
 public class PoliticaCancelacion {
-     int id;
-    String descripcion;
-    boolean esRembolsable;
+    private int id;
+    private String descripcion;
+    private boolean esRembolsable;
 
     void aplicarPolitica() {
         // Lógica para aplicar política de cancelación

@@ -12,8 +12,8 @@ import java.util.Date;
  * @author marsa
  */
 public class ReglasPropiedad {
-    Date checkIn;
-    Date checkOut;
+    private Date checkIn;
+    private Date checkOut;
     ArrayList<String> restricciones = new ArrayList<>();
 
     void actualizarReglas() {

@@ -9,16 +9,16 @@ package ec.edu.espol.tarea01diseniolarga;
  * @author marsa
  */
 public class Unidad {
-    int id;
-    TipoUnidad estado;
-    String nombre;
-    int capacidad;
+    private int id;
+    private TipoUnidad estado;
+    private String nombre;
+    private int capacidad;
 
-    void actualizarEstado(TipoUnidad estado) {
+    public void actualizarEstado(TipoUnidad estado) {
         this.estado = estado; // Lógica para actualizar estado
     }
 
-    void asignarReserva() {
+    void asignarReserva(Reserva reserva) {
         // Lógica para asignar reserva
     }
     
